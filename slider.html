@@ -7,24 +7,23 @@
 <body>
  
 
-<!--slider start-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="scripts/jquery.cookie.js"></script>
+<script src="scripts/jquery.cookie.js"></script> <!--Plugin credit https://github.com/carhartl/jquery-cookie-->
 
 <script> 
 $(document).ready(function () {
 
-    if (jQuery.cookie('slidercookie') == null) {
+    if (jQuery.cookie('cookie') == null) {
         $('.slide-out-div').slideDown('slow', function () {
             setTimeout(function () {
                 $('.slide-out-div').slideUp("slow");
              }, 4000);
 
-            $.cookie("slidercookie", "yes", { expires: 1 , path: '/'});
+            $.cookie("cookie", "yes", { expires: 1 , path: '/'});
     });
      }
 
-     if (jQuery.cookie('slidercookie')) {
+     if (jQuery.cookie('cookie')) {
 
      }
 
@@ -40,7 +39,6 @@ $(document).ready(function () {
 
 <div  id="bar" style= "height:30px;" ><img src="img/small.jpg"></div>
 <div  class="slide-out-div" style="display:none; border:0px"><a href="#"><img src="img/big.jpg"></a></div>
-<!--slider end-->
 
 </body>
 </html>
