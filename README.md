@@ -1,7 +1,7 @@
 ##Expandable banner with cookie using jQuery
 
-I built this for a specific project at work, thought I'd share it on GitHub. Using jQuery and div tags, the expandable banner auto expands for 4 seconds, then closes and places a cookie that expires in a day. 
-The banner will not open again automatically till the cookie expires or is removed. Banner toggles open and close with a click.
+Using jQuery, the expandable banner auto expands the bottom div downwards for 4 seconds, then closes it and places a cookie that expires in a day. 
+The banner will not open again automatically till the cookie expires or is removed. Banner toggles open and closed by clicking the top div.
 
 [Working Example](http://deadfacestudios.com/exas/slider/slider.html#)
 
