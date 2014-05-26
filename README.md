@@ -7,7 +7,7 @@ The banner will not open again automatically till the cookie expires or is remov
 
 You can put images, text, or anything else you want in the div tags, it's up to you.
 
-To get the cookie to work pleae download the latest version of carhartl's [jQuery cookie Plugin](https://github.com/carhartl/jquery-cookie). It's awesome.
+To get the cookie to work please download the latest version of carhartl's [jQuery cookie Plugin](https://github.com/carhartl/jquery-cookie). It's awesome.
 
 ###Credits
 [jQuery cookie Plugin](https://github.com/carhartl/jquery-cookie)
