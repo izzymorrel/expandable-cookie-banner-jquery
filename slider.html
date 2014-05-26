@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ 
+</head>
+<body>
+ 
+
+<!--slider start-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="scripts/jquery.cookie.js"></script>
+
+<script> 
+$(document).ready(function () {
+
+    if (jQuery.cookie('slidercookie') == null) {
+        $('.slide-out-div').slideDown('slow', function () {
+            setTimeout(function () {
+                $('.slide-out-div').slideUp("slow");
+             }, 4000);
+
+            $.cookie("slidercookie", "yes", { expires: 1 , path: '/'});
+    });
+     }
+
+     if (jQuery.cookie('slidercookie')) {
+
+     }
+
+    $('#bar').click(function () {
+        if ($('.slide-out-div').is(":hidden")) {
+            $('.slide-out-div').slideDown('slow');
+        } else {
+            $('.slide-out-div').slideUp('slow');
+        }
+    });
+});
+</script>
+
+<div  id="bar" style= "height:30px;" ><img src="img/small.jpg"></div>
+<div  class="slide-out-div" style="display:none; border:0px"><a href="#"><img src="img/big.jpg"></a></div>
+<!--slider end-->
+
+</body>
+</html>
